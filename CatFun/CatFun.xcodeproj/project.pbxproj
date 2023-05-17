@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3A54312A13C1C4008604ED /* CatClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A54302A13C1C4008604ED /* CatClassifier.mlmodel */; };
+		4B3A54352A13C6CF008604ED /* Image Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A54342A13C6CF008604ED /* Image Predictor.swift */; };
 		4B443D8A2A0A75C5005F4ECA /* CatFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B443D892A0A75C5005F4ECA /* CatFunApp.swift */; };
 		4B443D8C2A0A75C5005F4ECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B443D8B2A0A75C5005F4ECA /* ContentView.swift */; };
 		4B443D8E2A0A75C6005F4ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B443D8D2A0A75C6005F4ECA /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B3A54302A13C1C4008604ED /* CatClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatClassifier.mlmodel; sourceTree = "<group>"; };
+		4B3A54342A13C6CF008604ED /* Image Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Predictor.swift"; sourceTree = "<group>"; };
 		4B443D862A0A75C5005F4ECA /* CatFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B443D892A0A75C5005F4ECA /* CatFunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFunApp.swift; sourceTree = "<group>"; };
 		4B443D8B2A0A75C5005F4ECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3A542F2A13C1AC008604ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B3A54302A13C1C4008604ED /* CatClassifier.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B3A54322A13C5F3008604ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B443D8B2A0A75C5005F4ECA /* ContentView.swift */,
+				4B443D892A0A75C5005F4ECA /* CatFunApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B3A54332A13C6A7008604ED /* Image Predictor */ = {
+			isa = PBXGroup;
+			children = (
+				4B3A54342A13C6CF008604ED /* Image Predictor.swift */,
+			);
+			path = "Image Predictor";
+			sourceTree = "<group>";
+		};
 		4B443D7D2A0A75C5005F4ECA = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +123,9 @@
 		4B443D882A0A75C5005F4ECA /* CatFun */ = {
 			isa = PBXGroup;
 			children = (
-				4B443D892A0A75C5005F4ECA /* CatFunApp.swift */,
-				4B443D8B2A0A75C5005F4ECA /* ContentView.swift */,
-				4B443D8D2A0A75C6005F4ECA /* Assets.xcassets */,
+				4B3A54332A13C6A7008604ED /* Image Predictor */,
+				4B3A54322A13C5F3008604ED /* Views */,
+				4B3A542F2A13C1AC008604ED /* Models */,
 				4B443D8F2A0A75C6005F4ECA /* Preview Content */,
 			);
 			path = CatFun;
@@ -105,6 +134,7 @@
 		4B443D8F2A0A75C6005F4ECA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				4B443D8D2A0A75C6005F4ECA /* Assets.xcassets */,
 				4B443D902A0A75C6005F4ECA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -257,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3A54312A13C1C4008604ED /* CatClassifier.mlmodel in Sources */,
 				4B443D8C2A0A75C5005F4ECA /* ContentView.swift in Sources */,
 				4B443D8A2A0A75C5005F4ECA /* CatFunApp.swift in Sources */,
+				4B3A54352A13C6CF008604ED /* Image Predictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
